@@ -7,7 +7,6 @@ let sound = document.getElementById("myaudio");
 //Date
 
 const d = new Date();
-
 const date = d.getUTCDate() + 1;
 const month = d.getUTCMonth() + 1;
 const year = d.getUTCFullYear();
@@ -35,12 +34,5 @@ const tick = () => {
     sound.currentTime = 0;
     sound.loop = true;
     sound.play();
-
-
 };
-
 setInterval(tick, 1000);
-
-
-
-//myaudio.autoplay();

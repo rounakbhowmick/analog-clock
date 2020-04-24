@@ -30,8 +30,6 @@ body {
     overflow: hidden;
     border-radius: 15.625rem;
     border: 0.3rem solid rgb(251, 255, 12);
-
-
 }
 
 #myaudio {
@@ -56,7 +54,7 @@ body {
     height: 100%;
 
     text-align: center;
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 100;
     padding: 4.5rem;
 }
@@ -68,11 +66,10 @@ body {
     height: 100%;
 
     text-align: center;
-    font-size: 2rem;
-    font-weight: 100;
-    padding: 7rem;
+    font-size: 1rem;
+    font-weight: 10;
+    padding: 6rem;
 }
-
 
 /*clock inside hole*/
 .clock::before {
@@ -153,7 +150,6 @@ body {
     transform: translateX(-50%);
     background-color: rgb(255, 14, 14);
 }
-
 
 /*Hands Size */
 .sec {
