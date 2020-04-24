@@ -32,7 +32,8 @@ const tick = () => {
     hourdivision.style.transform = "rotate(" + (h * 360) + "deg)";
 
     sound.currentTime = 0;
-    sound.loop = true;
+
     sound.play();
 };
+sound.loop = true;
 setInterval(tick, 1000);
