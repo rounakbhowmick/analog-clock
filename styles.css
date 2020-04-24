@@ -1,0 +1,173 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'exo 2', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(circle at 82% 63%, rgba(183, 183, 183, 0.09) 0%, rgba(183, 183, 183, 0.09) 84%, transparent 84%, transparent 100%),
+        radial-gradient(circle at 88% 98%, rgba(232, 232, 232, 0.07) 0%, rgba(232, 232, 232, 0.07) 15%, transparent 15%, transparent 100%),
+        radial-gradient(circle at 77% 83%, rgba(252, 252, 252, 0.05) 0%, rgba(252, 252, 252, 0.05) 5%, transparent 5%, transparent 100%),
+        radial-gradient(circle at 64% 0%, rgba(140, 140, 140, 0.05) 0%, rgba(140, 140, 140, 0.05) 54%, transparent 54%, transparent 100%),
+        radial-gradient(circle at 57% 86%, rgba(241, 241, 241, 0.07) 0%, rgba(241, 241, 241, 0.07) 80%, transparent 80%, transparent 100%),
+        radial-gradient(circle at 17% 93%, rgba(68, 68, 68, 0.05) 0%, rgba(68, 68, 68, 0.05) 82%, transparent 82%, transparent 100%),
+        radial-gradient(circle at 85% 70%, rgba(10, 10, 10, 0.02) 0%, rgba(10, 10, 10, 0.02) 13%, transparent 13%, transparent 100%),
+        linear-gradient(90deg, rgb(48, 62, 175), rgb(254, 18, 105));
+}
+
+.clock {
+    position: relative;
+    width: 25rem;
+    height: 25rem;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 15.625rem;
+    border: 0.3rem solid rgb(251, 255, 12);
+
+
+}
+
+#myaudio {
+    display: none;
+}
+
+/*Clock inside background */
+.clock::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(113, 112, 129, 0.424)
+}
+
+#mydate {
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 100;
+    padding: 4.5rem;
+}
+
+#myweekday {
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 100;
+    padding: 7rem;
+}
+
+
+/*clock inside hole*/
+.clock::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: black;
+    border-radius: 50%;
+
+}
+
+.num {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1.1rem;
+}
+
+/*Number Spacing*/
+.num3 {
+    transform: rotate(90deg);
+}
+
+.num3 div {
+    transform: rotate(-90deg);
+}
+
+.num6 {
+    transform: rotate(180deg);
+}
+
+.num6 div {
+    transform: rotate(-180deg);
+}
+
+.num9 {
+    transform: rotate(270deg);
+}
+
+.num9 div {
+    transform: rotate(-270deg);
+}
+
+/*Small bars*/
+.num::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0.45rem;
+    height: 0.9rem;
+    background-color: black;
+}
+
+/*Hands Position and Colour Change*/
+.hand {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hand div {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(255, 14, 14);
+}
+
+
+/*Hands Size */
+.sec {
+    width: 0.01rem;
+    height: 35%;
+}
+
+.min {
+    height: 38%;
+    width: 0.3rem;
+
+}
+
+.hour {
+    height: 28%;
+    width: 0.5rem;
+}
