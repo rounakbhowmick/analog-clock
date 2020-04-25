@@ -85,19 +85,6 @@ body {
 
 }
 
-.smallcircle {
-    position: absolute;
-    top: 40%;
-    left: 40%;
-    margin: auto;
-
-    width: 5rem;
-    height: 5rem;
-    border-radius: 5.625rem;
-    border: 0.3rem solid rgb(161, 168, 166);
-}
-
-
 .num {
     position: absolute;
     width: 100%;
@@ -111,21 +98,6 @@ body {
 }
 
 /*Number Spacing*/
-.num1 {
-    transform: rotate(30deg);
-}
-
-.num1 div {
-    transform: rotate(-30deg);
-}
-
-.num2 {
-    transform: rotate(60deg);
-}
-
-.num2 div {
-    transform: rotate(-60deg);
-}
 
 .num3 {
     transform: rotate(90deg);
@@ -133,22 +105,6 @@ body {
 
 .num3 div {
     transform: rotate(-90deg);
-}
-
-.num4 {
-    transform: rotate(120deg);
-}
-
-.num4 div {
-    transform: rotate(-120deg);
-}
-
-.num5 {
-    transform: rotate(150deg);
-}
-
-.num5 div {
-    transform: rotate(-150deg);
 }
 
 .num6 {
@@ -159,44 +115,12 @@ body {
     transform: rotate(-180deg);
 }
 
-.num7 {
-    transform: rotate(210deg);
-}
-
-.num7 div {
-    transform: rotate(-210deg);
-}
-
-.num8 {
-    transform: rotate(240deg);
-}
-
-.num8 div {
-    transform: rotate(-240deg);
-}
-
 .num9 {
     transform: rotate(270deg);
 }
 
 .num9 div {
     transform: rotate(-270deg);
-}
-
-.num10 {
-    transform: rotate(300deg);
-}
-
-.num10 div {
-    transform: rotate(-300deg);
-}
-
-.num11 {
-    transform: rotate(330deg);
-}
-
-.num11 div {
-    transform: rotate(-330deg);
 }
 
 /*Small bars*/

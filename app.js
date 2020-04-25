@@ -3,11 +3,16 @@ const mindivision = document.getElementById('min');
 const hourdivision = document.getElementById('hour');
 
 let sound = document.getElementById("myaudio");
-
+/*window.addEventListener(() => {
+    sound.currentTime = 0;
+    sound.autoplay;
+    sound.loop = true;
+    console.log(sound.currentTime);
+});*/
 //Date
 
 const d = new Date();
-const date = d.getUTCDate() + 1;
+const date = d.getUTCDate();
 const month = d.getUTCMonth() + 1;
 const year = d.getUTCFullYear();
 
